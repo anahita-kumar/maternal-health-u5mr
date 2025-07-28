@@ -9,12 +9,22 @@ This repository contains an end-to-end analysis of maternal health service cover
 
 ## 📁 Repository Structure
 
-├── 01_rawdata/ # Raw input data files (UN and UNICEF sources)
-├── 02_scripts/ # Analysis scripts
-├── 03_outputs/ # Final outputs (plot + report)
-├── run_project.R # Main runner script for end-to-end workflow
-├── user_profile.R # Setup script to load/install required packages
-├── README.md # Project documentation
+.
+├── 01_rawdata/
+│   ├── population_demographics.xlsx
+│   ├── fusion_file_1.csv
+│   └── country_tracking.xlsx
+│
+├── 02_scripts/
+│   └── main_analysis.R
+│
+├── 03_outputs/
+│   └── final_report.html     <- this will be generated
+│
+├── run_project.R
+├── user_profile.R
+└── README.md                 <- describe how to run this project
+
 
 
 ---
