@@ -23,7 +23,7 @@ This repository contains an end-to-end analysis of maternal health service cover
 │
 ├── run_project.R
 ├── user_profile.R
-└── README.md                 <- describe how to run this project
+└── README.md                <- describes how to run this project
 
 
 
