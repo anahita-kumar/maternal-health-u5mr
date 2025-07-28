@@ -18,12 +18,12 @@ This repository contains an end-to-end analysis of maternal health service cover
 │
 ├── 02_scripts/
 │   └── main_analysis.R
+│   ├── run_project.R
+│   └── user_profile.R
 │
 ├── 03_outputs/
 │   └── final_report.html     <- this will be generated
 │
-├── run_project.R
-├── user_profile.R
 └── README.md                <- describes how to run this project
 ```
 
