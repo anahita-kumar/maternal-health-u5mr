@@ -9,6 +9,7 @@ This repository contains an end-to-end analysis of maternal health service cover
 
 ## 📁 Repository Structure
 
+```
 .
 ├── 01_rawdata/
 │   ├── population_demographics.xlsx
@@ -24,8 +25,7 @@ This repository contains an end-to-end analysis of maternal health service cover
 ├── run_project.R
 ├── user_profile.R
 └── README.md                <- describes how to run this project
-
-
+```
 
 ---
 
@@ -56,7 +56,7 @@ Countries are grouped based on their progress toward U5MR targets as defined by 
     03_outputs/final_report.html
 
 
-Data Sources
+## Data Sources
 
     UN World Population Prospects (2022): Demographic indicators
 
@@ -66,7 +66,7 @@ Data Sources
 
 See the 01_rawdata/ folder for raw input files.
 
-Dependencies
+## Dependencies
 
 The user_profile.R script automatically installs and loads the required R packages:
 
