@@ -10,21 +10,12 @@ This repository contains an end-to-end analysis of maternal health service cover
 ## 📁 Repository Structure
 
 ```
-.
-├── 01_rawdata/
-│   ├── population_demographics.xlsx
-│   ├── fusion_file_1.csv
-│   └── country_tracking.xlsx
-│
-├── 02_scripts/
-│   └── main_analysis.R
-│   ├── run_project.R
-│   └── user_profile.R
-│
-├── 03_outputs/
-│   └── final_report.html     <- this will be generated
-│
-└── README.md                <- describes how to run this project
+└── population_demographics.xlsx
+└── fusion_file_1.csv
+└── country_tracking.xlsx
+└── final_u5mr.R
+└── final_report.html     <- this will be generated
+└── README.md               <- describes how to run this project
 ```
 
 ---
@@ -46,14 +37,10 @@ Countries are grouped based on their progress toward U5MR targets as defined by 
 
 1. Clone or download this repository.
 2. Open R (or RStudio) and set the working directory to the root of the project.
-3. Run the two setup scripts in order:
-   ```r
-   source("user_profile.R")    # Installs and loads required packages
-   source("run_project.R")     # Executes full analysis and generates report
-
+3. Run final_u5mr.R
 4. The final output will be saved as:
 
-    03_outputs/final_report.html
+  final_report.html
 
 
 ## Data Sources
@@ -64,11 +51,10 @@ Countries are grouped based on their progress toward U5MR targets as defined by 
 
     UNICEF Country Classification: U5MR target tracking
 
-See the 01_rawdata/ folder for raw input files.
-
 ## Dependencies
 
 The user_profile.R script automatically installs and loads the required R packages:
 
     readxl, dplyr, tidyr, janitor, stringr, countrycode, ggplot2, rmarkdown, kableExtra, knitr
+
 
