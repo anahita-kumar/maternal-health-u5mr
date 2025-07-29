@@ -109,15 +109,19 @@ results <- final_data %>%
     .groups = "drop"
   )
 
-# Write results to HTML table
+
+# Write results to HTML table 
 html_table <- results %>%
+  select(-coverage) %>%  # 👈 Omit the coverage column
   kable(
     format = "html",
     digits = 2,
-    col.names = c("U5MR Status", "ANC4 Coverage", "SBA Coverage", "Countries with Data", "Total Countries", "Coverage %"),
+    col.names = c("U5MR Status", "ANC4 Coverage", "SBA Coverage", 
+                  "Countries with Data", "Total Countries"),
     caption = "Table 1. Population-Weighted Coverage by U5MR Status Group"
   ) %>%
   kable_styling(full_width = FALSE)
+
 
 results_grouped <- results %>%
   mutate(
