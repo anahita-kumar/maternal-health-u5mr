@@ -1,7 +1,3 @@
----
-title: "Learning and Skills Data Analyst Consultant – Req. #581598"
-output: html_document
----
 
 # actual data starts on row 17
 start_row <- 17
@@ -179,11 +175,15 @@ writeLines(
 )
 
 # Write RMarkdown report
+
+
 report_lines <- c(
   "---",
   "title: 'Health Service Coverage Report'",
   "output: html_document",
   "---",
+  "",
+  "**Learning and Skills Data Analyst Consultant – Req. #581598**",
   "",
   "```{r, echo=FALSE, fig.align='center'}",
   "knitr::include_graphics('coverage_plot.png')",
@@ -197,6 +197,7 @@ report_lines <- c(
   "html_table",
   "```"
 )
+
 
 writeLines(report_lines, "report.Rmd")
 rmarkdown::render("report.Rmd", output_file = "final_report.html")
