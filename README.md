@@ -13,7 +13,7 @@ This repository contains an end-to-end analysis of maternal health service cover
 └── population_demographics.xlsx
 └── fusion_file_1.csv
 └── country_tracking.xlsx
-└── final_u5mr.R
+└── run_project.R
 └── final_report.html     <- this will be generated
 └── README.md               <- describes how to run this project
 ```
@@ -37,8 +37,9 @@ Countries are grouped based on their progress toward U5MR targets as defined by 
 
 1. Clone or download this repository.
 2. Open R (or RStudio) and set the working directory to the root of the project.
-3. Run final_u5mr.R
-4. The final output will be saved as:
+3. Run run_project.R
+4. There is no need to run a separate user_profile.R file as the dependencies are included in run_project.R
+5. The final output will be saved as:
 
   final_report.html
 
@@ -53,7 +54,7 @@ Countries are grouped based on their progress toward U5MR targets as defined by 
 
 ## Dependencies
 
-The user_profile.R script automatically installs and loads the required R packages:
+The run_project.R script automatically installs and loads the required R packages, therefore eliminating the need for setting up "user_profile.R":
 
     readxl, dplyr, tidyr, janitor, stringr, countrycode, ggplot2, rmarkdown, kableExtra, knitr
 
