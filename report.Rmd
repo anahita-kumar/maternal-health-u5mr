@@ -1,0 +1,17 @@
+---
+title: 'Health Service Coverage Report'
+output: html_document
+---
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics('coverage_plot.png')
+```
+
+```{r, results='asis', echo=FALSE}
+cat(readLines('interpretation.md'), sep = '
+')
+```
+
+```{r, echo=FALSE, results='asis'}
+html_table
+```

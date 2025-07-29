@@ -57,4 +57,3 @@ The user_profile.R script automatically installs and loads the required R packag
 
     readxl, dplyr, tidyr, janitor, stringr, countrycode, ggplot2, rmarkdown, kableExtra, knitr
 
-
